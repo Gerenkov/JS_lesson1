@@ -21,3 +21,29 @@ if (typeof x === 'number') {
 } else if (typeof x === 'undefined') {
 	console.log('Тип x не определён')
 } */
+
+
+// 10.4. Строки, числа
+// let string = "My name Vitalii";
+// let result;
+// let substr;
+
+// if (string.includes("Vitalii")) {
+// 	result = string.toLocaleUpperCase() /* в верхний регистр */
+// 	substr = string.slice(0, 4) /* возвращает часть строки от 0 до 4(не включая) */
+// } else {
+// 	result = string.toLocaleLowerCase() /* в нижний регистр */
+// }
+// console.log(result);
+// console.log(substr);
+
+// Задание 3
+// Необходимо вывести в консоль перевёрнутый вариант.
+function reverseString(str) {
+	return console.log(str.split("").reverse().join(""));
+}
+reverseString("Vitalii");
+
+// Задание 4
+// аписать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.
+console.log(Math.floor(Math.random() * 100) + 1);
