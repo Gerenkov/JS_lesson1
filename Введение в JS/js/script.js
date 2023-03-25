@@ -4,6 +4,10 @@ if (result === null) {
 	alert('Вы отказались от ввода')
 } else if (isNaN(result % 2)) {
 	alert('Упс, кажется вы ошиблись')
+} else if (typeof result !== Number) {
+	alert('Вы не ввели число')
+} else if (result == 0) {
+	alert('Число нечетное')
 } else if (result % 2 === 0) {
 	alert('Число четное')
 } else {
@@ -45,7 +49,7 @@ if (typeof x === 'number') {
 reverseString("Vitalii"); */
 
 // Задание 4
-// аписать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.
+// Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.
 // console.log(Math.floor(Math.random() * 100) + 1);
 
 // Задание 5
